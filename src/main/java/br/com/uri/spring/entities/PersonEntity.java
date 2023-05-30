@@ -1,18 +1,19 @@
 package br.com.uri.spring.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import lombok.Data;
+import org.hibernate.annotations.GeneratorType;
+
+import javax.persistence.*;
 
 @Entity
+@Data
+@Table(name = "person")
 public class PersonEntity {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
+    @Column
+    private String name;
 }
