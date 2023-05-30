@@ -1,6 +1,7 @@
-package br.com.uri.springdemo.repositories;
+package br.com.uri.spring.repositories;
 
-import br.com.uri.springdemo.entities.PersonEntity;
+
+import br.com.uri.spring.entities.PersonEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
