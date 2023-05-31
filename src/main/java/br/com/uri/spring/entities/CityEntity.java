@@ -1,14 +1,13 @@
 package br.com.uri.spring.entities;
 
 import lombok.Data;
-import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "city")
 @Data
-@Table(name = "person")
-public class PersonEntity {
+public class CityEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -17,7 +16,10 @@ public class PersonEntity {
     @Column
     private String name;
 
-    @OneToOne
-    private CityEntity cityEntity;
+    @Column
+    private String state;
+
+    @Column
+    private String zipCode;
 
 }
