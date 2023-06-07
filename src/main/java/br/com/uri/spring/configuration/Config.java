@@ -14,10 +14,4 @@ public class Config {
         objectMapper.registerModule(new Jdk8Module());
         return objectMapper;
     }
-
-    @Bean
-    public ObjectMapper objectMapperr() {
-        return new ObjectMapper();
-    }
-
 }

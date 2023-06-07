@@ -36,10 +36,4 @@ public class PersonService {
         personRepository.save(personEntity);
     }
 
-
-
-
-
-
-
 }
